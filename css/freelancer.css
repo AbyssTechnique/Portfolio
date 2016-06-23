@@ -505,3 +505,14 @@ footer .footer-below {
   top: 54%;
   left: 23%;
 }
+
+#geek {
+  background-image: url("../img/Geek.jpeg");
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-size: 160%;
+  background-position-x: 45%;
+  background-position-y: 42%;
+  background-repeat: no-repeat;
+}
