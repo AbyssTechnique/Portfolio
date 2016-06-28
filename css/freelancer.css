@@ -554,8 +554,13 @@ footer .footer-below {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a8a8', endColorstr='#cccccc',GradientType=0 );
   background: linear-gradient(top, rgba(168,168,168,1) 0%,rgba(204,204,204,1) 23%);
   position: relative;
+  display: inline-block;
+  transform: translateY(3px);
+  float: right;
+  border-radius: 10px;
+  margin-right: 10%;
 }
-#bar {
+.bar {
   height: 20px;
   background: rgb(255,197,120);
   background: -moz-linear-gradient(top, rgba(220,50,78,1) 0%,rgba(255,183,40,1) 100%);
@@ -567,11 +572,11 @@ footer .footer-below {
   border-radius: 10px 0 0 10px;
   transform: translateY(-1px);
 }
-#bar p {
+.bar p {
   position: absolute;
   text-align: center;
-  width: 100%;
   margin: 0;
+  width: 100%;
   line-height: 21px;
   font-size: 18px;
   color: #000;
@@ -583,19 +588,13 @@ footer .footer-below {
   color: red;
   border: 1px solid red;
 }
-#progress {
-  display: inline-block;
-  transform: translateY(3px);
-  float: right;
-  border-radius: 10px;
-  margin-right: 10%;
-}
+
 #skills {
   font-size: 20px;
   margin-left: 5%;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .col-lg-12 {
     width: 100%;
     float: left;
@@ -616,5 +615,11 @@ footer .footer-below {
   .navbar-shrink {
     transform: translateY(-17px);
     height: 70px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .graph {
+    width: 450px;
   }
 }
